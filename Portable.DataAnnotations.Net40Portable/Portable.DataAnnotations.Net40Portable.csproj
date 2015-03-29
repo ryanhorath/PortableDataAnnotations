@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{687A452E-572F-45D6-A295-49177D841590}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.ComponentModel.DataAnnotations</RootNamespace>
+    <AssemblyName>Portable.DataAnnotations</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile328</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\DataType.cs">
+      <Link>DataType.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\IValidatableObject.cs">
+      <Link>IValidatableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\LocalizableString.cs">
+      <Link>LocalizableString.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributeStore.cs">
+      <Link>ValidationAttributeStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\AssociationAttribute.cs">
+      <Link>ValidationAttributes\AssociationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\ConcurrencyCheckAttribute.cs">
+      <Link>ValidationAttributes\ConcurrencyCheckAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\CustomValidationAttribute.cs">
+      <Link>ValidationAttributes\CustomValidationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\DataTypeAttribute.cs">
+      <Link>ValidationAttributes\DataTypeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\DisplayAttribute.cs">
+      <Link>ValidationAttributes\DisplayAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\DisplayColumnAttribute.cs">
+      <Link>ValidationAttributes\DisplayColumnAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\DisplayFormatAttribute.cs">
+      <Link>ValidationAttributes\DisplayFormatAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\EditableAttribute.cs">
+      <Link>ValidationAttributes\EditableAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\EnumDataTypeAttribute.cs">
+      <Link>ValidationAttributes\EnumDataTypeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\FilterUIHintAttribute.cs">
+      <Link>ValidationAttributes\FilterUIHintAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\KeyAttribute.cs">
+      <Link>ValidationAttributes\KeyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\MetadataTypeAttribute.cs">
+      <Link>ValidationAttributes\MetadataTypeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\RangeAttribute.cs">
+      <Link>ValidationAttributes\RangeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\RegularExpressionAttribute.cs">
+      <Link>ValidationAttributes\RegularExpressionAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\RequiredAttribute.cs">
+      <Link>ValidationAttributes\RequiredAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\StringLengthAttribute.cs">
+      <Link>ValidationAttributes\StringLengthAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\TimestampAttribute.cs">
+      <Link>ValidationAttributes\TimestampAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\UIHintAttribute.cs">
+      <Link>ValidationAttributes\UIHintAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\ValidationAttribute.cs">
+      <Link>ValidationAttributes\ValidationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationContext.cs">
+      <Link>ValidationContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationException.cs">
+      <Link>ValidationException.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationResult.cs">
+      <Link>ValidationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\Validator.cs">
+      <Link>Validator.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\DataAnnotationsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataAnnotationsResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DataAnnotationsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataAnnotationsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

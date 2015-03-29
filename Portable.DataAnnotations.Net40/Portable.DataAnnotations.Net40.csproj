@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F061DE0B-67ED-4F7B-BB3F-01A45FCAA266}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.ComponentModel.DataAnnotations</RootNamespace>
+    <AssemblyName>Portable.DataAnnotations</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\BindableTypeAttribute.cs">
+      <Link>ValidationAttributes\BindableTypeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\Schema\ColumnAttribute.cs">
+      <Link>ValidationAttributes\Schema\ColumnAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\Schema\ComplexTypeAttribute.cs">
+      <Link>ValidationAttributes\Schema\ComplexTypeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\Schema\ForeignKeyAttribute.cs">
+      <Link>ValidationAttributes\Schema\ForeignKeyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\Schema\InversePropertyAttribute.cs">
+      <Link>ValidationAttributes\Schema\InversePropertyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\Schema\NotMappedAttribute.cs">
+      <Link>ValidationAttributes\Schema\NotMappedAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.Net45Portable\ValidationAttributes\Schema\TableAttribute.cs">
+      <Link>ValidationAttributes\Schema\TableAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.WindowsRuntime\ValidationAttributes\CreditCardAttribute.cs">
+      <Link>ValidationAttributes\CreditCardAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.WindowsRuntime\ValidationAttributes\EmailAddressAttribute.cs">
+      <Link>ValidationAttributes\EmailAddressAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.WindowsRuntime\ValidationAttributes\MaxLengthAttribute.cs">
+      <Link>ValidationAttributes\MaxLengthAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.WindowsRuntime\ValidationAttributes\MinLengthAttribute.cs">
+      <Link>ValidationAttributes\MinLengthAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.WindowsRuntime\ValidationAttributes\PhoneAttribute.cs">
+      <Link>ValidationAttributes\PhoneAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Portable.DataAnnotations.WindowsRuntime\ValidationAttributes\UrlAttribute.cs">
+      <Link>ValidationAttributes\UrlAttribute.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\DataAnnotationsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataAnnotationsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TypeForwards.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DataAnnotationsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataAnnotationsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

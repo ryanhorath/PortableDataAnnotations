@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Portable.DataAnnotations.Net40/obj
+/Portable.DataAnnotations.Net40/bin
+/Portable.DataAnnotations.Net40/bin
+/Portable.DataAnnotations.Net40/bin
+/Portable.DataAnnotations.Net40Portable/bin/Release
+/Portable.DataAnnotations.Net40Portable/obj
+/Portable.DataAnnotations.Net45/bin/Release
+/Portable.DataAnnotations.Net45/obj
+/Portable.DataAnnotations.Net45Portable/bin
+/Portable.DataAnnotations.Net45Portable/obj
+/Portable.DataAnnotations.WindowsRuntime/obj
+/Portable.DataAnnotations.WindowsRuntime/bin
+/Portable.DataAnnotations.Xamarin/obj
+/Portable.DataAnnotations.Xamarin/bin
