@@ -5,12 +5,13 @@
     <version>1.0.0</version>
     <title>Portable Data Annotations</title>
     <authors>Ryan Horath</authors>
-    <owners>Ryan Horath</owners>
+    <owners>Rybird Studios</owners>
     <summary>A portable library for the DataAnnotations namespace.</summary>
-    <description>A portable library for the DataAnnotations namespace. Reduced surface area matches the Silverlight SDK version of DataAnnotations.</description>
+    <description>A portable library for the DataAnnotations namespace. Reduced surface area matches the Silverlight SDK version of DataAnnotations, with additions of some classes.</description>
     <language>en-US</language>
-    <projectUrl>https://github.com/rthorat/PortableDataAnnotations</projectUrl>
-    <iconUrl>https://github.com/rthorat/PortableDataAnnotations/raw/master/AsyncEx.128.png</iconUrl>
+    <projectUrl>https://github.com/ryanhorath/PortableDataAnnotations</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ryanhorath/PortableDataAnnotations/master/Rybird-32.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/ryanhorath/PortableDataAnnotations/master/LICENSE</licenseUrl>
     <tags>net45 win8 net40 netcore45 sl5 wp8 wpa81 dataannotations data annotations</tags>
     <dependencies>
       <group targetFramework="net40" />
