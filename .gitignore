@@ -16,3 +16,7 @@
 /Portable.DataAnnotations.WindowsRuntime/bin
 /Portable.DataAnnotations.Xamarin/obj
 /Portable.DataAnnotations.Xamarin/bin
+NuGet.Config
+NuGet.exe
+NuGet.targets
+/Portable.DataAnnotations.v12.suo
