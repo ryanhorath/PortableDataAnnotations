@@ -1,3 +1,6 @@
+# NOTE
+This project is no longer actively maintained. The DataAnnotations libraries are included in .NET Core 1.0 and .NET Standard 1.6. Portable projects that previously made use of this library should be re-targeted to .NET Standard 1.6 or higher.
+
 # Portable Data Annotations
 A portable implementation of Data Annotations using the PCL bait and switch technique.
 
